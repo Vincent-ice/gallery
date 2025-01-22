@@ -1,0 +1,56 @@
+baseURL = "https://gallery.vincent-ice.me"
+copyright = "© Vincent-ice"
+defaultContentLanguage = "zh"
+disableKinds = ["taxonomy"]
+enableRobotsTXT = true
+languageCode = "zh"
+timeZone = "Asia/Shanghai"
+timeout = "120s"
+title = "Gallery"
+theme = "gallery"
+
+[services.googleAnalytics]
+ID = "G-VLD9YXKQP8"
+
+[params]
+  defaultTheme = "dark"
+  description = "Vincent-ice's gallery"
+  title = "Vincent-ice Gallery"
+  [params.author]
+    email = "VincentWQ123@gmail.com"
+    name = "Vincent-ice"
+  [params.socialIcons]
+    github = "https://github.com/Vincent-ice"
+    bilibili = "https://space.bilibili.com/355696074"
+    email = "mailto:VincentWQ123@gmail.com"
+    website = "https://www.vincent-ice.me"
+    #mastodon = "https://example.com"
+    #pixelfed = "https://example.com"
+    #mixcloud = "https://mixcloud.com"
+  [params.gallery]
+    #boxSpacing = 10
+    #targetRowHeight = 288
+    #targetRowHeightTolerance = 0.25
+
+[outputs]
+  home = ["HTML", "RSS"]
+  page = ["HTML"]
+  section = ["HTML"]
+
+[imaging]
+  quality = 75
+  resampleFilter = "CatmullRom"
+  [imaging.exif]
+    disableDate = false
+    disableLatLong = true
+    includeFields = "ImageDescription|Orientation"
+
+[menu]
+  [[menu.footer]]
+    name = "GitHub"
+    url = "https://github.com/Vicnent-ice/gallery"
+    weight = 3
+
+[services]
+  [services.rss]
+    limit = 100
